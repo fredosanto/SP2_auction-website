@@ -1,0 +1,20 @@
+{
+  "name": "sp2",
+  "version": "1.0.0",
+  "description": "My semester project at Noroff to make a website for a auction house. Users on this website can bid on items and add items to the auction for other users to bid on.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
