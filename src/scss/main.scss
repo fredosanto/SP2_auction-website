@@ -1,6 +1,13 @@
 @import "variables";
+@import "./components/nav";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
   background-color: $primary;
+  font-family: $body-font;
+}
+
+.logo {
+  font-family: $logo-font;
+  text-transform: uppercase;
 }
