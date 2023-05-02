@@ -1,0 +1,53 @@
+@import "../scss/variables";
+@import "../scss/components/nav";
+@import "../scss/components/btn";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  background-color: $primary;
+  font-family: $body-font;
+}
+
+.logo {
+  font-family: $logo-font;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+}
+
+.nav-link {
+  font-family: $header-font;
+  font-size: 1.5rem;
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+.search-container {
+  display: flex;
+  background-color: #d9d9d9;
+}
+
+#search-form {
+  margin: auto;
+}
+
+.search-input {
+  display: inline-block;
+  width: auto;
+  margin: 5px;
+}
+
+.btn-primary {
+  @include button-style(map-get($btn-colours, primary));
+}
+.btn-primary:hover {
+  @include button-hover(map-get($btn-colours, primary));
+}
+
+.btn-secondary {
+  @include button-style(map-get($btn-colours, secondary));
+}
+.btn-secondary:hover {
+  @include button-hover(map-get($btn-colours, secondary));
+}

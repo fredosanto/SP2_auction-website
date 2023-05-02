@@ -4,3 +4,14 @@ $btn-colours: (
   "alternate": #3a4750,
   "disabled": #eeeeee,
 );
+
+@mixin button-style($btn-colours) {
+  background-color: $btn-colours;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+
+@mixin button-hover($btn-colours) {
+  box-shadow: 0px 0px 10px 10px $btn-colours;
+}
