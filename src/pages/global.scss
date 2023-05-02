@@ -1,11 +1,22 @@
 @import "../scss/variables";
 @import "../scss/components/nav";
 @import "../scss/components/btn";
+@import "../scss/components/profile-img";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: $primary;
   font-family: $body-font;
+}
+
+h1 {
+  font-family: $header-font;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .logo {
@@ -29,12 +40,11 @@ body {
 }
 
 #search-form {
-  margin: auto;
+  width: 100%;
 }
 
 .search-input {
-  display: inline-block;
-  width: auto;
+  max-width: 350px;
   margin: 5px;
 }
 
@@ -51,3 +61,32 @@ body {
 .btn-secondary:hover {
   @include button-hover(map-get($btn-colours, secondary));
 }
+
+.btn-search {
+  margin: 5px;
+}
+
+.profile-img_container {
+  margin: auto;
+  @include profile-img-container(200px, 200px);
+}
+
+.profile-img {
+  @extend .profile-img-ratio;
+}
+
+.auction_section {
+  width: 100%;
+}
+
+// .auction_container {
+//   width: 100%;
+// }
+
+// .listing_container {
+//   gap: 25px;
+// }
+
+// .listing {
+//   padding: 10px;
+// }
