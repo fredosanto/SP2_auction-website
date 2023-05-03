@@ -1,0 +1,11 @@
+@mixin profile-img-container($img-width, $img-height) {
+  width: $img-width;
+  height: $img-height;
+  background-color: black;
+}
+
+.profile-img-ratio {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}

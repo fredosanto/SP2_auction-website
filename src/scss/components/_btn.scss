@@ -6,12 +6,19 @@ $btn-colours: (
 );
 
 @mixin button-style($btn-colours) {
+  font-family: $header-font;
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: $btn-colours;
-  margin: 5px;
+  color: #000000;
+  margin: 20px 5px;
+  padding: 10px 25px;
   border-radius: 10px;
   border: 1px solid #eeeeee;
 }
 
 @mixin button-hover($btn-colours) {
+  background-color: $btn-colours;
   box-shadow: 0px 0px 10px 10px $btn-colours;
+  border: 1px solid #000000;
 }
