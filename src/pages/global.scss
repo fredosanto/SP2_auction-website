@@ -13,10 +13,10 @@ body {
   font-family: $body-font;
 }
 
-h1 {
+h1,
+h2 {
   font-family: $header-font;
   font-weight: 400;
-  text-decoration: underline;
 }
 
 .logo {
@@ -74,19 +74,3 @@ h1 {
 .profile-img {
   @extend .profile-img-ratio;
 }
-
-.auction_section {
-  width: 100%;
-}
-
-// .auction_container {
-//   width: 100%;
-// }
-
-// .listing_container {
-//   gap: 25px;
-// }
-
-// .listing {
-//   padding: 10px;
-// }

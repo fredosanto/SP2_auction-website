@@ -10738,10 +10738,11 @@ body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, .h1 {
+h1, .h1,
+h2,
+.h2 {
   font-family: "Orbitron", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  text-decoration: underline;
 }
 
 .logo {
@@ -10818,10 +10819,6 @@ h1, .h1 {
   width: 200px;
   height: 200px;
   background-color: black;
-}
-
-.auction_section {
-  width: 100%;
 }
 
 /*# sourceMappingURL=global.css.map */
