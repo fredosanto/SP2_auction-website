@@ -24,6 +24,9 @@ h2 {
   text-transform: uppercase;
   font-size: 2.25rem;
 }
+.logo:hover {
+  color: $alternate;
+}
 
 .nav-link {
   font-family: $header-font;
@@ -60,6 +63,13 @@ h2 {
 }
 .btn-secondary:hover {
   @include button-hover(map-get($btn-colours, secondary));
+}
+
+.btn-alternate {
+  @include button-style(map-get($btn-colours, alternate));
+}
+.btn-alternate:hover {
+  @include button-hover(map-get($btn-colours, alternate));
 }
 
 .btn-search {

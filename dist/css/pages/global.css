@@ -10751,6 +10751,10 @@ h2,
   font-size: 2.25rem;
 }
 
+.logo:hover {
+  color: #d9d9d9;
+}
+
 .nav-link {
   font-family: "Orbitron", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -10807,6 +10811,24 @@ h2,
 .btn-secondary:hover {
   background-color: #4ecca3;
   box-shadow: 0px 0px 10px 10px #4ecca3;
+  border: 1px solid #000000;
+}
+
+.btn-alternate {
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #3a4750;
+  color: #000000;
+  margin: 20px 5px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+
+.btn-alternate:hover {
+  background-color: #3a4750;
+  box-shadow: 0px 0px 10px 10px #3a4750;
   border: 1px solid #000000;
 }
 
