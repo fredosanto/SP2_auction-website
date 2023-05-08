@@ -22,7 +22,7 @@
   <body class="bg-dark">
     <nav class="navbar navbar-expand-sm bg-black navbar-dark">
       <div class="container-fluid nav-container bg-black">
-        <a class="navbar-brand logo" href="#">Bid wars</a>
+        <a class="navbar-brand logo" href="/index.html">Bid wars</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,13 +34,15 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
+              <a class="nav-link" href="/src/pages/profile/index.html"
+                >Profile</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="/src/pages/login/index.html">Login</a>
             </li>
           </ul>
         </div>
@@ -79,6 +81,70 @@
         <p class="d-inline-block m-1">5000,-</p>
       </div>
     </div>
-    <section></section>
+    <section>
+      <div
+        class="container bid-container d-flex row-cols-1 row-cols-lg-2 flex-column flex-lg-row align-content-center justify-content-around my-5"
+      >
+        <div
+          class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
+        >
+          <div class="listing-img_container m-auto">
+            <img
+              src="/images/pexels-mason-mccall-12733046.jpg"
+              alt=""
+              class="listing-img"
+            />
+          </div>
+          <h2 class="text-center text-decoration-none m-auto p-3">
+            Super long product Name
+          </h2>
+          <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
+          <p class="m-auto text-muted">Owner: John Stones</p>
+          <p class="m-auto p-3 text-center product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam
+            ligula, viverra nec fringilla sit amet, aliquam quis arcu. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam
+            ligula, viverra nec fringilla sit amet, aliquam quis arcu. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam
+            ligula, viverra nec fringilla sit amet, aliquam quis arcu.
+          </p>
+          <hr />
+          <p class="m-auto p-3 price">Price: 500,-</p>
+        </div>
+        <div class="bid_container d-flex flex-column m-auto">
+          <h1 class="m-auto">Latest Bids</h1>
+          <div class="latest-bids bg-secondary p-3 rounded-4 my-3">
+            <div class="bid d-flex justify-content-around">
+              <p class="d-inline-block">Username 1</p>
+              <p class="d-inline-block">Bid: 230</p>
+            </div>
+            <hr />
+            <div class="bid d-flex justify-content-around">
+              <p class="d-inline-block">Username 2</p>
+              <p class="d-inline-block">Bid: 230</p>
+            </div>
+            <hr />
+            <div class="bid d-flex justify-content-around">
+              <p class="d-inline-block">Username 3</p>
+              <p class="d-inline-block">Bid: 230</p>
+            </div>
+            <hr />
+            <div class="bid d-flex justify-content-around">
+              <p class="d-inline-block">Username 4</p>
+              <p class="d-inline-block">Bid: 230</p>
+            </div>
+            <hr />
+            <div class="bid d-flex justify-content-around">
+              <p class="d-inline-block">Username 5</p>
+              <p class="d-inline-block">Bid: 230</p>
+            </div>
+            <hr />
+          </div>
+          <button class="btn btn-primary w-50 m-auto" type="submit">
+            Make Bid
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
