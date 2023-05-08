@@ -6,4 +6,53 @@
   text-decoration: underline;
 }
 
+.bid-container {
+  gap: 50px;
+}
+
+.listing_container {
+  width: 100%;
+}
+
+.listing {
+  max-height: 550px;
+}
+
+.listing-img_container {
+  width: 200px;
+  height: 200px;
+}
+
+.listing-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.listing-link {
+  transition: transform 0.2s;
+}
+
+.listing-link:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px white;
+}
+
+.product-description {
+  max-width: 500px;
+  height: 10ch;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.bid p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=listing.css.map */
