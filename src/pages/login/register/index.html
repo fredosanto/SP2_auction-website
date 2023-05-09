@@ -30,25 +30,63 @@
     </header>
     <section>
       <div
-        class="container login_container d-flex flex-column m-auto bg-black p-5"
+        class="container login_container d-flex flex-column m-auto bg-black p-5 mb-5"
       >
-        <h1 class="m-auto p-3">Login</h1>
-        <form action="/index.html" id="login-form" class="d-flex flex-column">
+        <h1 class="m-auto p-3 text-uppercase text-decoration-underline">
+          Register
+        </h1>
+        <form action="" id="register-form" class="d-flex flex-column">
           <div class="input_container mb-3">
-            <label for="email">Email</label>
+            <label for="username">Username:*</label>
+            <input
+              type="text"
+              name="username"
+              id="register-username"
+              class="form-control"
+              required
+              pattern="^[\w]+$"
+              title="User name can only include letters, numbers and underscore"
+            />
+            <div class="validation-error d-block p-1 my-1 bg-danger">
+              * User name can only include letters, numbers and underscore
+            </div>
+          </div>
+          <div class="input_container mb-3">
+            <label for="email">Email:*</label>
             <input
               type="email"
               name="email"
-              id="login-email"
+              id="register-email"
               class="form-control"
+              required
+              pattern="^[\w\-.]+@(stud.)?noroff.no$"
+              title="The email can only consist of letter, numbers, dot and underscore. It must be a @stud.noroff.no email."
             />
+            <div class="validation-error d-block p-1 my-1 bg-danger">
+              * The email can only consist of letter, numbers, dot and
+              underscore. It must be a @stud.noroff.no email.
+            </div>
           </div>
           <div class="input_container mb-3">
-            <label for="password">Password</label>
+            <label for="password">Password:*</label>
             <input
               type="password"
               name="password"
-              id="login-password"
+              id="register-password"
+              class="form-control"
+              required
+              minlength="8"
+            />
+            <div class="validation-error d-block p-1 my-1 bg-danger">
+              * Password must be at least 8 characters
+            </div>
+          </div>
+          <div class="input_container mb-3">
+            <label for="password">Avatar: (optional)</label>
+            <input
+              type="text"
+              name="avatar"
+              id="register-avatar"
               class="form-control"
             />
           </div>
@@ -57,9 +95,17 @@
             id="register-btn"
             class="btn btn-secondary w-50 mx-auto text-black"
           >
-            Login
+            Register
           </button>
         </form>
+        <p class="m-auto p-3">
+          click here to,
+          <span
+            ><a class="text-primary" href="../index.html"
+              >continue login</a
+            ></span
+          >
+        </p>
       </div>
     </section>
   </body>

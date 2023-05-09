@@ -32,7 +32,9 @@
       <div
         class="container login_container d-flex flex-column m-auto bg-black p-5"
       >
-        <h1 class="m-auto p-3">Login</h1>
+        <h1 class="m-auto p-3 text-uppercase text-decoration-underline">
+          Login
+        </h1>
         <form action="/index.html" id="login-form" class="d-flex flex-column">
           <div class="input_container mb-3">
             <label for="email">Email</label>
@@ -41,7 +43,13 @@
               name="email"
               id="login-email"
               class="form-control"
+              required
+              pattern="^[\w\-.]+@(stud.)?noroff.no$"
+              title="Email doesn't exist or must be a @stud.noroff.no email."
             />
+            <div class="validation-error d-block p-1 my-1 bg-danger">
+              * Email doesn't exist or must be a @stud.noroff.no email.
+            </div>
           </div>
           <div class="input_container mb-3">
             <label for="password">Password</label>
@@ -50,7 +58,12 @@
               name="password"
               id="login-password"
               class="form-control"
+              required
+              minlength="8"
             />
+            <div class="validation-error d-block p-1 my-1 bg-danger">
+              * Password must be at least 8 characters
+            </div>
           </div>
           <button
             type="submit"
