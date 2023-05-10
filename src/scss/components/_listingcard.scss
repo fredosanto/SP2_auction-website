@@ -1,0 +1,34 @@
+// .listing {
+//   max-height: 550px;
+// }
+
+// .listing-header {
+//   width: 100%;
+// }
+.listing h2 {
+  overflow-wrap: break-word;
+}
+
+.listing-img_container {
+  width: 200px;
+  height: 200px;
+}
+
+.listing-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.product-description {
+  max-width: 500px;
+  height: 10ch;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listing | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/dist/css/pages/global.css" />
+    <link rel="stylesheet" href="/dist/css/pages/profile/profile.css" />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+      <div class="container-fluid nav-container bg-black">
+        <a class="navbar-brand logo" href="/index.html">Bid wars</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col col-sm-12lapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white text-decoration-underline"
+                href="/src/pages/profile/index.html"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/src/pages/login/index.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="search-container p-3">
+      <form
+        id="search-form"
+        class="d-flex align-content-center justify-content-center"
+        action=""
+      >
+        <input
+          class="form-control search-input d-inline-block"
+          type="search"
+          name=""
+          id=""
+          placeholder="Search"
+        />
+        <button
+          class="btn btn-secondary btn-search d-inline-block"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="d-flex breadcrumb_container justify-content-between px-5 py-4">
+      <a href="#" class="back-button text-light">
+        <div class="back-button_container d-flex flex-row">
+          <i class="bi bi-box-arrow-left m-1"></i>
+          <p class="d-inline-block m-1">Back</p>
+        </div>
+      </a>
+      <h1>Profile</h1>
+      <div class="wallet_container d-flex flex-row">
+        <i class="bi bi-cash-coin m-1"></i>
+        <p class="d-inline-block m-1">5000,-</p>
+      </div>
+    </div>
+    <section>
+      <div class="container d-flex flex-column">
+        <div>
+          <div
+            class="d-flex flex-column justify-content-center d-flex align-items-center bg-dark m-5"
+          >
+            <div class="profile-img_container rounded-circle">
+              <img
+                src="/images/pexels-estonian-stalker-10645502.jpg"
+                alt=""
+                class="profile-img rounded-circle"
+              />
+            </div>
+            <p class="m-3">John Stones</p>
+            <p class="m-3"><i class="bi bi-cash-coin"></i> Credit: 1000,-</p>
+            <button class="btn btn-secondary">Edit</button>
+            <button class="btn btn-primary">Add Listing</button>
+          </div>
+        </div>
+        <div class="container">
+          <h2>Your listings</h2>
+          <div class="row gy-4">
+            <div class="col col-sm-12 col-lg-6 col-xl-4">
+              <div
+                class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
+              >
+                <div class="listing-img_container m-auto">
+                  <img
+                    src="/images/pexels-mason-mccall-12733046.jpg"
+                    alt=""
+                    class="listing-img"
+                  />
+                </div>
+                <div class="listing-header">
+                  <h2 class="text-center text-decoration-none m-auto p-3">
+                    Super long product Namesdnvkaln sdvlønvaøsldnløasdnvk
+                  </h2>
+                </div>
+                <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
+                <p class="m-auto text-muted">Owner: John Stones</p>
+                <p class="m-auto p-3 text-center product-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean quam ligula, viverra nec fringilla sit amet, aliquam
+                  quis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Aenean quam ligula, viverra nec fringilla sit amet,
+                  aliquam quis arcu. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean quam ligula, viverra nec fringilla sit
+                  amet, aliquam quis arcu.
+                </p>
+                <hr />
+                <p class="m-auto p-3 price">Price: 500,-</p>
+              </div>
+            </div>
+            <div class="col col-sm-12 col-lg-6 col-xl-4">
+              <div
+                class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
+              >
+                <div class="listing-img_container m-auto">
+                  <img
+                    src="/images/pexels-mason-mccall-12733046.jpg"
+                    alt=""
+                    class="listing-img"
+                  />
+                </div>
+                <div class="listing-header">
+                  <h2 class="text-center text-decoration-none m-auto p-3">
+                    Super long product Namesdnvkaln sdvlønvaøsldn løasdnvk
+                  </h2>
+                </div>
+                <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
+                <p class="m-auto text-muted">Owner: John Stones</p>
+                <p class="m-auto p-3 text-center product-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean quam ligula.
+                </p>
+                <hr />
+                <p class="m-auto p-3 price">Price: 500,-</p>
+              </div>
+            </div>
+            <div class="col col-sm-12 col-lg-6 col-xl-4">
+              <div
+                class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
+              >
+                <div class="listing-img_container m-auto">
+                  <img
+                    src="/images/pexels-mason-mccall-12733046.jpg"
+                    alt=""
+                    class="listing-img"
+                  />
+                </div>
+                <div class="listing-header">
+                  <h2 class="text-center text-decoration-none m-auto p-3">
+                    Super long product Name
+                  </h2>
+                </div>
+                <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
+                <p class="m-auto text-muted">Owner: John Stones</p>
+                <p class="m-auto p-3 text-center product-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean quam ligula, viverra nec fringilla sit amet, aliquam
+                  quis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Aenean quam ligula, viverra nec fringilla sit amet,
+                  aliquam quis arcu. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit.
+                </p>
+                <hr />
+                <p class="m-auto p-3 price">Price: 500,-</p>
+              </div>
+            </div>
+            <div class="col col-sm-12 col-lg-6 col-xl-4">
+              <div
+                class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
+              >
+                <div class="listing-img_container m-auto">
+                  <img
+                    src="/images/pexels-mason-mccall-12733046.jpg"
+                    alt=""
+                    class="listing-img"
+                  />
+                </div>
+                <div class="listing-header">
+                  <h2 class="text-center text-decoration-none m-auto p-3">
+                    Super long product Namesdnvkaln sdvlønvaøsldnløasdnvk
+                  </h2>
+                </div>
+                <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
+                <p class="m-auto text-muted">Owner: John Stones</p>
+                <p class="m-auto p-3 text-center product-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean quam ligula, viverra nec fringilla sit amet, aliquam
+                  quis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Aenean quam ligula, viverra nec fringilla sit amet,
+                  aliquam quis arcu. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean quam ligula, viverra nec fringilla sit
+                  amet, aliquam quis arcu.
+                </p>
+                <hr />
+                <p class="m-auto p-3 price">Price: 500,-</p>
+              </div>
+            </div>
+            <div class="col col-sm-12 col-lg-6 col-xl-4">
+              <div
+                class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
+              >
+                <div class="listing-img_container m-auto">
+                  <img
+                    src="/images/pexels-mason-mccall-12733046.jpg"
+                    alt=""
+                    class="listing-img"
+                  />
+                </div>
+                <div class="listing-header">
+                  <h2 class="text-center text-decoration-none m-auto p-3">
+                    Super long product Namesdnvkaln sdvlønvaøsldnløasdnvk
+                  </h2>
+                </div>
+                <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
+                <p class="m-auto text-muted">Owner: John Stones</p>
+                <p class="m-auto p-3 text-center product-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean quam ligula, viverra nec fringilla sit amet, aliquam
+                  quis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. .
+                </p>
+                <hr />
+                <p class="m-auto p-3 price">Price: 500,-</p>
+              </div>
+            </div>
+            <div class="col col-sm-12 col-lg-6 col-xl-4">
+              <div
+                class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
+              >
+                <div class="listing-img_container m-auto">
+                  <img
+                    src="/images/pexels-mason-mccall-12733046.jpg"
+                    alt=""
+                    class="listing-img"
+                  />
+                </div>
+                <div class="listing-header">
+                  <h2 class="text-center text-decoration-none m-auto p-3">
+                    Super long product Namesdnvkaln nløasdnvk
+                  </h2>
+                </div>
+                <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
+                <p class="m-auto text-muted">Owner: John Stones</p>
+                <p class="m-auto p-3 text-center product-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean quam ligula, viverra nec fringilla sit amet, aliquam
+                  quis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Aenean quam ligula, viverra nec fringilla sit amet,
+                  aliquam quis arcu. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit.
+                </p>
+                <hr />
+                <p class="m-auto p-3 price">Price: 500,-</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -2,6 +2,7 @@
 @import "../scss/components/nav";
 @import "../scss/components/btn";
 @import "../scss/components/profile-img";
+@import "../scss/components/listingcard";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
@@ -74,6 +75,13 @@ h2 {
 
 .btn-search {
   margin: 5px;
+}
+
+.back-button {
+  text-decoration: none;
+}
+.back-button:hover {
+  text-decoration: underline;
 }
 
 .profile-img_container {
