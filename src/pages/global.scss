@@ -1,6 +1,7 @@
 @import "../scss/variables";
 @import "../scss/components/nav";
 @import "../scss/components/btn";
+@import "../scss/components/form";
 @import "../scss/components/profile-img";
 @import "../scss/components/listingcard";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -91,4 +92,14 @@ h2 {
 
 .profile-img {
   @extend .profile-img-ratio;
+}
+
+.form-logo {
+  font-size: 3rem;
+  font-family: $logo-font;
+  text-transform: uppercase;
+}
+
+.form_container {
+  max-width: 500px;
 }

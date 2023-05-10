@@ -10882,4 +10882,14 @@ h2,
   background-color: black;
 }
 
+.form-logo {
+  font-size: 3rem;
+  font-family: "Staatliches", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.form_container {
+  max-width: 500px;
+}
+
 /*# sourceMappingURL=global.css.map */

@@ -140,9 +140,33 @@
             </div>
             <hr class="text-black" />
           </div>
-          <button class="btn btn-primary w-50 m-auto" type="submit">
-            Make Bid
-          </button>
+          <div class="add-bid_container">
+            <form action="" id="bid-form">
+              <div class="input_container mb-3">
+                <label for="bid-amount">Make bid</label>
+                <input
+                  type="number"
+                  name="bid"
+                  id="bid-amount"
+                  class="form-control"
+                  required
+                  min="1"
+                  max="9999"
+                  placeholder="100"
+                />
+                <div class="validation-error d-block p-1 my-1 bg-danger">
+                  * Not enough credit
+                </div>
+              </div>
+              <button
+                type="submit"
+                id="bid-btn"
+                class="btn btn-primary w-50 m-auto"
+              >
+                Make Bid
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

@@ -18,19 +18,19 @@
     <link rel="stylesheet" href="/dist/css/pages/global.css" />
     <link rel="stylesheet" href="/dist/css/pages/login/login.css" />
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./registerBtn.js" defer></script>
+    <!-- <script src="./registerBtn.js" defer></script> -->
   </head>
   <body class="bg-dark">
     <header>
       <div class="container d-flex justify-content-center p-5">
         <a href="/index.html" class="text-decoration-none">
-          <h1 class="text-primary logo">Bid wars</h1>
+          <h1 class="text-primary form-logo">Bid wars</h1>
         </a>
       </div>
     </header>
     <section>
       <div
-        class="container login_container d-flex flex-column m-auto bg-black p-5"
+        class="container form_container d-flex flex-column m-auto bg-black p-5"
       >
         <h1 class="m-auto p-3 text-uppercase text-decoration-underline">
           Login
@@ -73,9 +73,11 @@
             Login
           </button>
         </form>
-        <button id="visit-register" class="btn btn-primary w-50 m-auto">
-          Register
-        </button>
+        <a
+          class="btn btn-primary w-50 m-auto"
+          href="/src/pages/login/register/index.html"
+          >Register</a
+        >
         <p class="m-auto p-3">
           not now,
           <span
