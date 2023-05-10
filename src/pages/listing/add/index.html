@@ -33,58 +33,71 @@
         class="container form_container d-flex flex-column m-auto bg-black p-5"
       >
         <h1 class="m-auto p-3 text-uppercase text-decoration-underline">
-          Login
+          Add listing
         </h1>
-        <form action="/index.html" id="login-form" class="d-flex flex-column">
+        <form action="/index.html" id="add-form" class="d-flex flex-column">
           <div class="input_container mb-3">
-            <label for="email">Email</label>
+            <label for="email">Title: *</label>
             <input
-              type="email"
-              name="email"
-              id="login-email"
+              type="text"
+              name="title"
+              id="add-title"
               class="form-control"
               required
-              pattern="^[\w\-.]+@(stud.)?noroff.no$"
-              title="Email doesn't exist or must be a @stud.noroff.no email."
+              title="Add a title to listing."
             />
             <div class="validation-error d-block p-1 my-1 bg-danger">
-              * Email doesn't exist or must be a @stud.noroff.no email.
+              * Insert title.
             </div>
           </div>
           <div class="input_container mb-3">
-            <label for="password">Password</label>
+            <label for="description">Description: (optional)</label>
+            <textarea
+              name="description"
+              id="add-description"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="input_container mb-3">
+            <label for="media">Tags: (optional)</label>
+            <input type="text" name="tags" id="add-tags" class="form-control" />
+          </div>
+          <div class="input_container mb-3">
+            <label for="media">Media: (optional)</label>
             <input
-              type="password"
-              name="password"
-              id="login-password"
+              type="text"
+              name="media"
+              id="add-media"
+              class="form-control"
+            />
+          </div>
+          <div class="input_container mb-3">
+            <label for="date">End date: *</label>
+            <input
+              type="text"
+              name="date"
+              id="add-date"
               class="form-control"
               required
-              minlength="8"
+              placeholder="2020-01-01T00:00:00.000Z"
+              title="Add a end date to listing."
             />
             <div class="validation-error d-block p-1 my-1 bg-danger">
-              * Password must be at least 8 characters
+              * Insert end date: 2020-01-01T00:00:00.000Z.
             </div>
           </div>
           <button
             type="submit"
             id="login-btn"
-            class="btn btn-alternate w-50 mx-auto text-light"
+            class="btn btn-primary w-50 mx-auto"
           >
-            Login
+            Add
           </button>
         </form>
-        <a
-          class="btn btn-primary w-50 m-auto"
-          href="/src/pages/login/register/index.html"
-          >Register</a
-        >
         <p class="m-auto p-3">
           not now,
-          <span
-            ><a class="text-primary" href="/index.html"
-              >continue as guest</a
-            ></span
-          >
+          <span><a class="text-primary" href="/index.html">go back</a></span>
         </p>
       </div>
     </section>

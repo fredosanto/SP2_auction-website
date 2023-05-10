@@ -10892,4 +10892,8 @@ h2,
   max-width: 500px;
 }
 
+textarea {
+  width: 100%;
+}
+
 /*# sourceMappingURL=global.css.map */

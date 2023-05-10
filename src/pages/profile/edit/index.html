@@ -32,56 +32,41 @@
         class="container form_container d-flex flex-column m-auto bg-black p-5"
       >
         <h1 class="m-auto p-3 text-uppercase text-decoration-underline">
-          Login
+          Edit Avatar
         </h1>
-        <form action="/index.html" id="login-form" class="d-flex flex-column">
+        <form
+          action="/src/pages/profile/index.html"
+          id="edit-form"
+          class="d-flex flex-column"
+        >
           <div class="input_container mb-3">
-            <label for="email">Email</label>
+            <label for="username">URL-link:</label>
             <input
-              type="email"
-              name="email"
-              id="login-email"
+              type="text"
+              name="edit-avatar"
+              id="edit-avatar"
               class="form-control"
               required
-              pattern="^[\w\-.]+@(stud.)?noroff.no$"
-              title="Email doesn't exist or must be a @stud.noroff.no email."
+              title="Add a valid URL"
             />
             <div class="validation-error d-block p-1 my-1 bg-danger">
-              * Email doesn't exist or must be a @stud.noroff.no email.
+              * Avatar must be valid URL
             </div>
           </div>
-          <div class="input_container mb-3">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="login-password"
-              class="form-control"
-              required
-              minlength="8"
-            />
-            <div class="validation-error d-block p-1 my-1 bg-danger">
-              * Password must be at least 8 characters
-            </div>
-          </div>
+
           <button
             type="submit"
             id="login-btn"
-            class="btn btn-alternate w-50 mx-auto text-light"
+            class="btn btn-secondary w-50 mx-auto text-light"
           >
-            Login
+            Update
           </button>
         </form>
-        <a
-          class="btn btn-primary w-50 m-auto"
-          href="/src/pages/login/register/index.html"
-          >Register</a
-        >
         <p class="m-auto p-3">
           not now,
           <span
-            ><a class="text-primary" href="/index.html"
-              >continue as guest</a
+            ><a class="text-primary" href="/src/pages/profile/index.html"
+              >back to profile</a
             ></span
           >
         </p>
