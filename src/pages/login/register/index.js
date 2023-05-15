@@ -1,5 +1,4 @@
 "use strict";
-import * as endpoint from "../../../js/api/endpoints.js";
+import { registerUser } from "../../../js/listeners/forms/registerForm.js";
 
-const api = endpoint.API;
-console.log(api.auth.register);
+registerUser();
