@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bid Wars | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="/dist/css/pages/global.css" />
+    <link rel="stylesheet" href="/dist/css/scss/index.css" />
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js" type="module" defer></script>
+    <script src="../components/index.js" type="module"></script>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+      <div class="container-fluid nav-container bg-black">
+        <a class="navbar-brand logo" href="./index.html">Bid wars</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white text-decoration-underline"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link profile-btn d-none" href="./profile/index.html"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <button class="nav-link login-btn d-inline-block">Login</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="search-container p-3">
+      <form
+        id="search-form"
+        class="d-flex align-content-center justify-content-center"
+        action=""
+      >
+        <input
+          class="form-control search-input d-inline-block"
+          type="search"
+          name=""
+          id=""
+          placeholder="Search"
+        />
+        <button
+          class="btn btn-secondary btn-search d-inline-block"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <header>
+      <div
+        id="user-profile"
+        class="d-flex flex-column justify-content-center d-flex align-items-center bg-dark m-5 d-none"
+      >
+        <div class="profile-img_container rounded-circle">
+          <img
+            src="/images/pexels-estonian-stalker-10645502.jpg"
+            alt=""
+            class="profile-img rounded-circle"
+          />
+        </div>
+        <p class="m-3 text-uppercase" id="username">John Stones</p>
+        <div class="m-3 d-flex justify-content-between">
+          <i class="bi bi-cash-coin p-1"></i>
+          <p class="p-1" id="credit"></p>
+        </div>
+        <a href="/src/pages/listing/add/index.html" class="btn btn-primary"
+          >Add Listing</a
+        >
+      </div>
+      <hr />
+    </header>
+    <section>
+      <div class="container">
+        <div class="container">
+          <h1 class="py-3 text-uppercase text-decoration-underline">Auction</h1>
+          <div class="row gy-4" id="auction"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

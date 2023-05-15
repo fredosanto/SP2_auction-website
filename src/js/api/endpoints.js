@@ -1,7 +1,7 @@
 const base = "https://api.noroff.dev/api/v1/auction";
 
 export const API = {
-  auth: { register: base + "/register", login: base + "/login" },
+  auth: { register: base + "/auth/register", login: base + "/auth/login" },
   profiles: {
     $: base + "/profiles",
     name: (name) => {

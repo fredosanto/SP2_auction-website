@@ -74,6 +74,18 @@ h2 {
   @include button-hover(map-get($btn-colours, alternate));
 }
 
+.login-btn {
+  font-family: $header-font;
+  background-color: #000000;
+  color: #eeeeee;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+.login-btn:hover {
+  background-color: #4ecca3;
+  color: #000000;
+}
+
 .btn-search {
   margin: 5px;
 }
@@ -106,4 +118,12 @@ h2 {
 
 textarea {
   width: 100%;
+}
+
+.no_image {
+  background-color: lightgray;
+  color: red;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
