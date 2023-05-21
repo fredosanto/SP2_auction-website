@@ -21,6 +21,4 @@ export async function editAvatar(url) {
   } else {
     return alert(`Woops, something went wrong: ${update.errors[0].message}`);
   }
-
-  throw new Error(update.errors[0].message);
 }

@@ -19,6 +19,5 @@ export async function login(user) {
     location.assign("/index.html");
     return profile;
   }
-  alert("Username or password is incorrect");
-  throw new Error(`${response.status} Username or password is incorrect`);
+  return alert("Username or password is incorrect");
 }

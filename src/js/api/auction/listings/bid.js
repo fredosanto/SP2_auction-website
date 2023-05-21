@@ -11,23 +11,20 @@ const path = "?_seller=true&_bids=true";
 
 export async function bid(amount) {
   const url = api + path;
-  try {
-    const response = await fetch(url, {
-      method: "POST",
-      body: JSON.stringify(amount),
-      headers: header("application/json"),
-    });
 
-    const status = await response.json();
+  const response = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(amount),
+    headers: header("application/json"),
+  });
 
-    if (response.ok) {
-      alert("Great! Your bid is placed!");
-      window.location.reload();
-      return pay;
-    }
-    console.log(status);
-    alert(`Error ${status.statusCode}: ${status.errors[0].message}`);
-  } catch (e) {
-    console.log(e);
+  const status = await response.json();
+
+  if (response.ok) {
+    alert("Great! Your bid is placed!");
+    window.location.reload();
+    return pay;
   }
+  console.log(status);
+  alert(`Error ${status.statusCode}: ${status.errors[0].message}`);
 }
