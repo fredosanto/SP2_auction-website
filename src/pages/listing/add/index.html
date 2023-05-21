@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Home</title>
+    <title>Bid Wars | Add listing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/dist/css/pages/global.css" />
     <link rel="stylesheet" href="/dist/css/pages/login/login.css" />
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="./registerBtn.js" defer></script> -->
+    <script src="./index.js" type="module" defer></script>
   </head>
   <body class="bg-dark">
     <header>
@@ -35,18 +35,18 @@
         <h1 class="m-auto p-3 text-uppercase text-decoration-underline">
           Add listing
         </h1>
-        <form action="/index.html" id="add-form" class="d-flex flex-column">
+        <form action="" id="add-form" class="d-flex flex-column">
           <div class="input_container mb-3">
             <label for="email">Title: *</label>
             <input
               type="text"
               name="title"
-              id="add-title"
+              id="addTitle"
               class="form-control"
               required
               title="Add a title to listing."
             />
-            <div class="validation-error d-block p-1 my-1 bg-danger">
+            <div class="title-error d-none p-1 my-1 bg-danger">
               * Insert title.
             </div>
           </div>
@@ -54,38 +54,43 @@
             <label for="description">Description: (optional)</label>
             <textarea
               name="description"
-              id="add-description"
+              id="addDescription"
               cols="30"
               rows="10"
             ></textarea>
           </div>
           <div class="input_container mb-3">
             <label for="media">Tags: (optional)</label>
-            <input type="text" name="tags" id="add-tags" class="form-control" />
+            <input type="text" name="tags" id="addTags" class="form-control" />
           </div>
           <div class="input_container mb-3">
             <label for="media">Media: (optional)</label>
             <input
               type="text"
               name="media"
-              id="add-media"
+              id="addMedia"
               class="form-control"
             />
           </div>
           <div class="input_container mb-3">
-            <label for="date">End date: *</label>
+            <label for="date">End date: *DD Month YYYY HH:MM UTC</label>
             <input
               type="text"
               name="date"
-              id="add-date"
+              id="addDate"
               class="form-control"
               required
-              placeholder="2020-01-01T00:00:00.000Z"
+              placeholder="02 August 2023 10:00 UTC"
+              min="02 August 2023 10:00 UTC"
+              max="02 August 2023 10:00 UTC"
               title="Add a end date to listing."
             />
-            <div class="validation-error d-block p-1 my-1 bg-danger">
-              * Insert end date: 2020-01-01T00:00:00.000Z.
+            <div class="date-error d-none p-1 my-1 bg-danger">
+              * Insert end date: 05 October 2011 14:48 UTC
             </div>
+          </div>
+          <div class="add-success d-none p-1 my-1 bg-success text-center">
+            Success! Listing Added!
           </div>
           <button
             type="submit"
@@ -96,9 +101,11 @@
           </button>
         </form>
         <p class="m-auto p-3">
-          not now,
+          not now or to proceed,
           <span
-            ><a class="text-primary" href="../../index.html">go back</a></span
+            ><a class="text-primary" href="../../index.html"
+              >click here</a
+            ></span
           >
         </p>
       </div>
