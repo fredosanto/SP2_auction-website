@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/dist/css/pages/global.css" />
     <link rel="stylesheet" href="/dist/css/pages/listing/listing.css" />
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js" type="module" defer></script>
+    <script src="../../components/index.js" type="module"></script>
   </head>
   <body class="bg-dark">
     <nav class="navbar navbar-expand-sm bg-black navbar-dark">
@@ -34,15 +36,21 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="../index.html">Home</a>
+              <a
+                class="nav-link text-white text-decoration-underline"
+                href="../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/src/pages/profile/index.html"
+              <a
+                class="nav-link profile-btn d-none"
+                href="/src/pages/profile/index.html"
                 >Profile</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/src/pages/login/index.html">Login</a>
+              <button class="nav-link login-btn d-inline-block">Login</button>
             </li>
           </ul>
         </div>
@@ -78,80 +86,32 @@
       </a>
       <div class="wallet_container d-flex flex-row">
         <i class="bi bi-cash-coin m-1"></i>
-        <p class="d-inline-block m-1">5000,-</p>
+        <p class="d-inline-block m-1" id="credit">,-</p>
       </div>
     </div>
     <section>
       <div
-        class="container bid-container d-flex row-cols-1 row-cols-lg-2 flex-column flex-lg-row align-content-center justify-content-around my-5"
+        class="container bid-container d-flex row-cols-1 row-cols-lg-2 flex-column flex-lg-row align-items-start justify-content-around my-5"
       >
         <div
-          class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3 m-auto"
-        >
-          <div class="listing-img_container m-auto">
-            <img
-              src="/images/pexels-mason-mccall-12733046.jpg"
-              alt=""
-              class="listing-img"
-            />
-          </div>
-          <h2 class="text-center text-decoration-none m-auto p-3">
-            Super long product Name
-          </h2>
-          <p class="m-auto text-muted">Deadline date: 21.05.2023</p>
-          <p class="m-auto text-muted">Owner: John Stones</p>
-          <p class="m-auto p-3 text-center product-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam
-            ligula, viverra nec fringilla sit amet, aliquam quis arcu. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam
-            ligula, viverra nec fringilla sit amet, aliquam quis arcu. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam
-            ligula, viverra nec fringilla sit amet, aliquam quis arcu.
-          </p>
-          <hr />
-          <p class="m-auto p-3 price">Price: 500,-</p>
-        </div>
+          class="listing p-3 border bg-black d-flex flex-column align-content-center justify-content-center rounded-3"
+          id="listing"
+        ></div>
         <div class="bid_container d-flex flex-column m-auto">
           <h1 class="m-auto">Latest Bids</h1>
-          <div class="latest-bids bg-primary p-3 rounded-4 my-3">
-            <div class="bid d-flex justify-content-around">
-              <p class="d-inline-block">Username 1</p>
-              <p class="d-inline-block">Bid: 230</p>
-            </div>
-            <hr class="text-black" />
-            <div class="bid d-flex justify-content-around">
-              <p class="d-inline-block">Username 2</p>
-              <p class="d-inline-block">Bid: 230</p>
-            </div>
-            <hr class="text-black" />
-            <div class="bid d-flex justify-content-around">
-              <p class="d-inline-block">Username 3</p>
-              <p class="d-inline-block">Bid: 230</p>
-            </div>
-            <hr class="text-black" />
-            <div class="bid d-flex justify-content-around">
-              <p class="d-inline-block">Username 4</p>
-              <p class="d-inline-block">Bid: 230</p>
-            </div>
-            <hr class="text-black" />
-            <div class="bid d-flex justify-content-around">
-              <p class="d-inline-block">Username 5</p>
-              <p class="d-inline-block">Bid: 230</p>
-            </div>
-            <hr class="text-black" />
-          </div>
-          <div class="add-bid_container">
-            <form action="" id="bid-form">
-              <div class="input_container mb-3">
-                <label for="bid-amount">Make bid</label>
+
+          <div id="bids"></div>
+
+          <div class="add-bid_container d-none" id="bid">
+            <form action="#" id="bid-form" class="text-center">
+              <div class="input_container mb-3 text-start">
+                <label for="amount">Make a higher bid:</label>
                 <input
                   type="number"
-                  name="bid"
-                  id="bid-amount"
+                  name="amount"
+                  id="bidAmount"
                   class="form-control"
                   required
-                  min="1"
-                  max="9999"
                   placeholder="100"
                 />
                 <div class="validation-error d-block p-1 my-1 bg-danger">

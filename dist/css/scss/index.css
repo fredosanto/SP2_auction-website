@@ -2,13 +2,4 @@
   height: auto;
 }
 
-.listing-link {
-  transition: transform 0.2s;
-}
-
-.listing-link:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 10px 2px white;
-}
-
 /*# sourceMappingURL=index.css.map */
