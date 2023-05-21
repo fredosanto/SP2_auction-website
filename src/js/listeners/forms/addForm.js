@@ -13,8 +13,8 @@ export async function addListing() {
 
     const title = addForm.addTitle.value;
     const description = addForm.addDescription.value;
-    const tags = addForm.addTags.value.split();
-    const media = addForm.addMedia.value.split();
+    const tags = addForm.addTags.value.split(",").map((tag) => tag.trim());
+    const media = addForm.addMedia.value ? [addForm.addMedia.value] : undefined;
     const date = new Date(addForm.addDate.value);
     const endsAt = date.toISOString();
 

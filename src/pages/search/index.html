@@ -26,7 +26,7 @@
   <body class="bg-dark">
     <nav class="navbar navbar-expand-sm bg-black navbar-dark">
       <div class="container-fluid nav-container bg-black">
-        <a class="navbar-brand logo" href="../index.html">Bid wars</a>
+        <a class="navbar-brand logo" href="/index.html">Bid wars</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,12 +40,14 @@
             <li class="nav-item">
               <a
                 class="nav-link text-white text-decoration-underline"
-                href="../index.html"
+                href="/index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link profile-btn d-none" href="./profile/index.html"
+              <a
+                class="nav-link profile-btn d-none"
+                href="../profile/index.html"
                 >Profile</a
               >
             </li>
@@ -79,28 +81,14 @@
       </form>
     </div>
     <header>
-      <div
-        id="user-profile"
-        class="d-flex flex-column justify-content-center d-flex align-items-center bg-dark m-5 d-none"
-      >
-        <div class="profile-img_container rounded-circle">
-          <img src="#" alt="" class="profile-img rounded-circle" />
-        </div>
-        <p class="m-3 text-uppercase" id="username"></p>
-        <div class="m-3 d-flex justify-content-between">
-          <i class="bi bi-cash-coin p-1"></i>
-          <p class="p-1" id="credit"></p>
-        </div>
-        <a href="/src/pages/listing/add/index.html" class="btn btn-primary"
-          >Add Listing</a
-        >
-      </div>
       <hr />
     </header>
     <section>
       <div class="container">
         <div class="container">
-          <h1 class="py-3 text-uppercase text-decoration-underline">Auction</h1>
+          <h1 class="py-3 text-uppercase text-decoration-underline">
+            Search results
+          </h1>
           <div class="row gy-4" id="auction"></div>
         </div>
       </div>

@@ -1,9 +1,10 @@
-import { getListingsById } from "../../js/api/auction/listings/getListingsById.js";
 import { getBids } from "../../js/api/auction/listings/getBids.js";
+import { getListingsById } from "../../js/api/auction/listings/getListingsById.js";
 import { renderAuctionListings } from "../../js/templates/auction/renderAuctionListings.js";
 import { renderBids } from "../../js/templates/auction/renderBids.js";
 
 export const listings = await getListingsById();
+console.log("listings", listings);
 listings.forEach((listing) => renderAuctionListings(listing));
 
 export const bids = await getBids();

@@ -16,7 +16,9 @@ export async function fetchUser() {
   const userName = document.querySelector("#username");
   const credit = document.querySelector("#credit");
   const img = document.querySelector(".profile-img");
-  credit.innerHTML = `Credits: ${userObj.credits},-`;
+  if (credit) {
+    credit.innerHTML = `Credits: ${userObj.credits},-`;
+  }
 
   if (userContainer) {
     userContainer.classList.remove("d-none");

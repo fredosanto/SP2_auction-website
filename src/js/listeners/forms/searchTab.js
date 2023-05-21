@@ -1,12 +1,12 @@
 "use strict";
 
-export function titleSearch() {
+export function tagSearch() {
   const searchBtn = document.querySelector("#searchBtn");
 
   searchBtn.addEventListener("click", (e) => {
     e.preventDefault();
     const searchInput = document.querySelector("#search");
-    const title = searchInput.value;
-    window.location.href = `/src/pages/search/index.html?title=${title}`;
+    const tag = searchInput.value;
+    window.location.href = `/src/pages/search/index.html?tag=${tag}`;
   });
 }
