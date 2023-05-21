@@ -6,20 +6,46 @@ export async function add(item) {
   const api = API.listings.$;
   const success = document.querySelector(".add-success");
 
-  const response = await fetch(api, {
-    method: "POST",
-    body: JSON.stringify(item),
-    headers: header("application/json"),
-  });
+  if (!success) {
+    console.warn("Did not find any element with class .add-success");
+    return;
+  }
 
-  const listing = await response.json();
-
-  if (response.ok) {
-    console.log(listing);
-    success.classList.remove("d-none");
-    return alert("Listing successfully added");
-  } else {
-    console.log(listing);
-    return alert(`Woops, something went wrong: ${listing.errors[0].message}`);
+  try {
+    const response = await fetch(api, {
+      method: "POST",
+      body: JSON.stringify(item),
+      headers: header("application/json"),
+    });
+    const listing = await response.json();
+    if (response.ok) {
+      success.classList.remove("d-none");
+      return alert("Listing successfully added");
+    }
+  } catch (error) {
+    console.error(error);
+    return alert(`Woops, something went wrong: ${error}`);
   }
 }
+
+// export async function add(item) {
+//   const api = API.listings.$;
+//   const success = document.querySelector(".add-success");
+
+//   const response = await fetch(api, {
+//     method: "POST",
+//     body: JSON.stringify(item),
+//     headers: header("application/json"),
+//   });
+
+//   const listing = await response.json();
+
+//   if (response.ok) {
+//     console.log(listing);
+//     success.classList.remove("d-none");
+//     return alert("Listing successfully added");
+//   } else {
+//     console.log(listing);
+//     return alert(`Woops, something went wrong: ${listing.errors[0].message}`);
+//   }
+// }
