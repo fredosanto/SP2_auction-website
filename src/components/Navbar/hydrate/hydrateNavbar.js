@@ -20,8 +20,8 @@ export function hydrateNavbar() {
     if (window.location.pathname === "/src/pages/profile/index.html") {
       window.location.href = "../login/index.html";
     }
-    if (window.location.pathname === "/src/pages/index.html") {
-      window.location.href = "./login/index.html";
+    if (window.location.pathname === "/index.html") {
+      window.location.href = "/src/pages/login/index.html";
     }
     if (window.location.pathname === "/src/pages/listing/index.html") {
       window.location.href = "../login/index.html";

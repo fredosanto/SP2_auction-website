@@ -16,7 +16,7 @@ export async function login(user) {
     save("token", profile.accessToken);
     save("profile", profile);
     alert("Logged in");
-    location.assign("../index.html");
+    location.assign("/index.html");
     return profile;
   }
   alert("Username or password is incorrect");
