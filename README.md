@@ -23,15 +23,15 @@ When a new user joins the website, they are given 1000 credits to use on the sit
 
 ### User Stories
 
-A user with a stud.noroff.no email may register
-A registered user may login
-A registered user may logout
-A registered user may update their avatar
-A registered user may view their total credit
-A registered user may create a Listing with a title, deadline date, media gallery and description
-A registered user may add a Bid to another user’s Listing
-A registered user may view Bids made on a Listing
-An unregistered user may search through Listings
+- A user with a stud.noroff.no email may register
+- A registered user may login
+- A registered user may logout
+- A registered user may update their avatar
+- A registered user may view their total credit
+- A registered user may create a Listing with a title, deadline date, media gallery and description
+- A registered user may add a Bid to another user’s Listing
+- A registered user may view Bids made on a Listing
+- An unregistered user may search through Listings
 
 ### Link to the site: [Live Demo](https://clinquant-llama-b27d14.netlify.app/).
 
