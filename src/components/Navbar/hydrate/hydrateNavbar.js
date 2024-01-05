@@ -20,6 +20,7 @@ export function hydrateNavbar() {
     }
     if (window.location.pathname === "/src/pages/profile/index.html") {
       window.location.href = "../login/index.html";
+      console.log("location exist");
     }
     if (window.location.pathname === "/index.html") {
       window.location.href = "/src/pages/login/index.html";
