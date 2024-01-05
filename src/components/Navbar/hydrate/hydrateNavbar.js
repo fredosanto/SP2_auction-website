@@ -13,6 +13,7 @@ export function hydrateNavbar() {
     profileBtn.classList.remove("d-none");
   }
   loginBtn.addEventListener("click", (e) => {
+    console.log("clicked");
     if (token) {
       remove(AUTH_TOKEN);
       remove(AUTH_PROFILE);
