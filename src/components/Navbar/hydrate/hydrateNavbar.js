@@ -23,20 +23,9 @@ export function hydrateNavbar() {
     console.log(loginHref);
     window.location.href = loginHref;
 
-    // if (token) {
-    //   remove(AUTH_TOKEN);
-    //   remove(AUTH_PROFILE);
-    // }
-    // if (window.location.pathname === "/src/pages/profile/index.html") {
-    //   window.location.href = "../login/index.html";
-    //   console.log("location exist");
-    // }
-    // if (window.location.pathname === "/index.html") {
-    //   window.location.href = "../../src/pages/login/index.html";
-    //   console.log("path exists");
-    // }
-    // if (window.location.pathname === "/src/pages/listing/index.html") {
-    //   window.location.href = "../login/index.html";
-    // }
+    if (token) {
+      remove(AUTH_TOKEN);
+      remove(AUTH_PROFILE);
+    }
   });
 }
