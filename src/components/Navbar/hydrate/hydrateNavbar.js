@@ -14,20 +14,29 @@ export function hydrateNavbar() {
   }
   loginBtn.addEventListener("click", (e) => {
     console.log("clicked");
-    if (token) {
-      remove(AUTH_TOKEN);
-      remove(AUTH_PROFILE);
-    }
-    if (window.location.pathname === "/src/pages/profile/index.html") {
-      window.location.href = "../login/index.html";
-      console.log("location exist");
-    }
-    if (window.location.pathname === "/index.html") {
-      window.location.href = "../../src/pages/login/index.html";
-      console.log("path exists");
-    }
-    if (window.location.pathname === "/src/pages/listing/index.html") {
-      window.location.href = "../login/index.html";
-    }
+    let url = new URL(window.location.origin);
+    console.log(url);
+    console.log(url.pathname);
+
+    url.pathname = "src/pages/login/index.html";
+    const loginHref = url.toString();
+    console.log(loginHref);
+    window.location.href = loginHref;
+
+    // if (token) {
+    //   remove(AUTH_TOKEN);
+    //   remove(AUTH_PROFILE);
+    // }
+    // if (window.location.pathname === "/src/pages/profile/index.html") {
+    //   window.location.href = "../login/index.html";
+    //   console.log("location exist");
+    // }
+    // if (window.location.pathname === "/index.html") {
+    //   window.location.href = "../../src/pages/login/index.html";
+    //   console.log("path exists");
+    // }
+    // if (window.location.pathname === "/src/pages/listing/index.html") {
+    //   window.location.href = "../login/index.html";
+    // }
   });
 }
